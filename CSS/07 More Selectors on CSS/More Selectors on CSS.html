@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors on HTML</title>
+    <style>
+        /*.box:first-child{
+            background-color: fuchsia;
+        }*/
+
+        /*.box::first-line{
+            color: blue;
+        }*/
+
+        /*.boxes *{
+            color:darkred;
+            border: 2px solid black;
+        }*/
+
+        /*p, a, .box, [data-color="primary"]{
+            padding-top: 45px;
+        }*/
+
+        /*.box:nth-child(even){
+            background-color: blue;
+        }*/
+
+        /*.box:nth-child(odd){
+            background-color: blue;
+        }*/
+
+        /*.box:nth-last-child(1){
+            background-color: aquamarine;
+        }*/
+
+        .boxes::before{                           /* Pseudo Element*/                    
+            content: "This is Before Containt";
+            color:hotpink;
+        }
+
+        .boxes::after{                              /* Pseudo Element*/  
+            content: "This is After Containt";
+            color: darkorange;
+        }
+
+        ::selection{
+            background-color: black;
+            color: aqua;
+        }
+
+        .box::first-letter{
+            color:chartreuse;
+            font-size: 25px;
+        }
+
+        input::placeholder{
+            color: blueviolet;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">Hey I Am a First Box</div>
+        <div class="box">Hey I Am a Second Box</div>
+        <div class="box">Hey I Am a Third Box</div>
+
+        <input type="text" placeholder="Type Your Name Here">
+    </div>
+</body>
+</html>
