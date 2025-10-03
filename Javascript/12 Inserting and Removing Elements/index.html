@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" red bg-green>
+        <div class="box" style="display: flex;" data - createdby = "harry" data - conceptby = "Rohan">Hey I am a Box</div>
+        <div class="box">Hey I am a Box</div>
+    </div>
+    <script>
+        // document.querySelector(".container").innerHTML
+        // //'\n        <div class="box" style="display: flex;">Hey I am a Box</div>\n        <div class="box">Hey I am a Box</div>\n    '
+        // document.querySelector(".container").innerText
+        // //'Hey I am a Box\nHey I am a Box'
+        // document.querySelector(".container").outerHTML
+        // //'<div class="container">\n        <div class="box" style="display: flex;">Hey I am a Box</div>\n        <div class="box">Hey I am a Box</div>\n    </div>'
+        // document.querySelector(".container").tagName
+        // //'DIV'
+        // document.querySelector(".container").nodeName
+        // //'DIV'
+        // document.querySelector(".container").textContent
+        // //'\n        Hey I am a Box\n        Hey I am a Box\n    '
+        // document.querySelector(".container").hidden
+        // //false
+        // document.querySelector(".container").hidden = true
+        // //true
+        // document.querySelector(".container").innerHTML = "Hey I am Vrunda"
+        // //'Hey I am Vrunda'
+
+        /* ======================================================================================================================= */
+
+        // document.querySelector(".container").className
+        // 'container'
+        // document.querySelector(".container").classList.add("harry")
+        // undefined
+        // document.querySelector(".container").classList.remove("harry")
+        // undefined
+        // document.querySelector(".container").classList.remove("red")
+        // undefined
+        // document.querySelector(".container").classList.add("red")
+        // undefined
+        // document.querySelector(".container").classList.toggle("red")
+        // false
+        // document.querySelector(".container").classList.toggle("red")
+        // true
+
+        /* ======================================================================================================================= */
+
+        // let div = document.createElement("div");
+        // div.innerHTML = "I have been inserted <b>by harry</b>"
+        // div.setAttribute("class","created");
+        // document.querySelector(".container").before(div);
+
+        /* ======================================================================================================================= */
+
+        let cont = document.querySelector(".container")
+        cont.insertAdjacentHTML("afterend"," <b> I am Under a Water Please Help me </b>")
+
+    </script>
+</body>
+</html>
